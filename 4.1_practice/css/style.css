@@ -557,7 +557,10 @@ input[type="radio"]
 textarea
 {
     width: 540px;
+    min-width: 230px;
     height: 150px;
+    min-height: 100px;
+    resize: none;
 }
 
 input[type="submit"]
