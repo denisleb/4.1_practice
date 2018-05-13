@@ -1,0 +1,625 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400');
+@import url('https://fonts.googleapis.com/css?family=Lato:500');
+@import url('https://fonts.googleapis.com/css?family=Lato:600');
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+@import url('https://fonts.googleapis.com/css?family=Lato:800');
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+/* непрозрачность блока с исходной дизайнерской картинкой */
+.translusent_image_design
+{
+    position: absolute;
+    width: 1920px;
+    height: 3905px;
+    top: 0px;
+    //left: 0px;
+    left: -338px;
+    opacity: 1;
+    z-index: -1;
+}
+
+/* непрозрачность блока покрывающего всю страницу технологическая */
+.translusent_page
+{
+    position: absolute;
+    opacity: 0.8;
+    width: 1920px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.hamburger_button
+{
+    display:none;
+    position: fixed;
+    z-index: 999;
+    top: 50px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: rgb(51,51,51);
+    background: rgb(242,245,247);
+    transition: .3s;
+    opacity: .6;
+    border-radius: 4px;
+}
+
+.hamburger_button:hover
+{
+    opacity: 1;
+    color: rgb(255,255,255);
+    background: rgb(130,200,230);
+}
+
+.top_menu_container
+{
+    max-width: 1920px;
+    background: rgb(245,247,250);
+}
+
+.top_menu_row
+{
+    padding-right: 20px;
+    height: 40px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(245,247,250);
+}
+
+.link_left
+{
+    float: left;
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb(80,106,133);
+}
+
+.link_right
+{
+    height: 40px;
+    width: 30px;
+    float: right;
+    background-color: aliceblue;
+}
+
+.float_clear
+{
+    clear: both;
+}
+
+.menu_main_row
+{
+    height: 110px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgb(255,255,255);
+}
+
+.menu_logotipe
+{
+    float: left;
+    width: 230px;
+    height: 110px;
+    background: url(../images/menu_main_logotipe.png) no-repeat;
+    margin-left: 8px;
+}
+
+.menu_main
+{
+    padding-left: 30px;
+}
+
+.menu_link
+{
+    float: left;
+    height: 110px;
+    line-height: 110px;
+    padding: 0 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(80,106,133);
+    margin-left: 22px;
+    background: rgb(255,255,255);
+}
+
+.menu_link_canvas_box
+{
+    position: fixed;
+}
+
+.menu_link_canvas
+{
+    float: left;
+    padding: 0 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(80,106,133);
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 140px;
+    background: transparent;
+}
+
+.menu_link_fixed
+{
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    z-index: 999;
+}
+
+.menu_lens
+{
+    float: right;
+    text-align: right;
+    margin-right: 30px;
+    width: 70px;
+    height: 110px;
+    line-height: 110px;
+    background: url("../images_/menu_main_lens.png") no-repeat rgb(255,255,255);
+}
+
+.inscriptions_one_row
+{
+    margin: 80px auto 0;
+    max-width: 1200px;
+}
+
+.caption_h2
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: rgb(80,106,133);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text_standart
+{
+    margin-top: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: rgb(115,135,156);
+    text-align: center;
+}
+
+.pictograph_row
+{
+    margin: 35px auto;
+    max-width: 1200px;
+    padding-bottom: 5px;
+    text-align: center;
+    background: rgb(255,255,255);
+}
+
+.pictograph_cell
+{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+.pictograph_image
+{
+    position: absolute;
+    float: left;
+    width: 63px;
+    height: 70px;
+}
+
+.pictograph_box
+{
+    display: block;
+    position: relative;
+    padding-left: 90px;
+    padding-right: 10px;
+}
+
+.pictograph_caption
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: rgb(80,106,133);
+    text-align: left;
+}
+
+.pictograph_text
+{
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(80,106,133);
+    text-align: left;
+}
+
+.color_container
+{
+    background: rgb(242,245,247);
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.motel_row
+{
+    margin: 60px auto 0;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.motel_cell
+{
+    margin: 0 auto;
+}
+
+.motel_text
+{
+    padding: 25px 0;
+    margin: 0 auto;
+    max-width: 570px;
+    height: auto;
+    background: rgb(255,255,255);
+}
+
+.motel_capture
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(80,106,133);
+    letter-spacing: 1px;
+}
+
+.motel_minitext
+{
+    margin: -10px auto 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(80,106,133);
+}
+
+.reklam_row
+{
+    margin: 85px auto 0;
+    max-width: 1200px;
+    text-align: center;
+    padding: 0;
+}
+
+.reklam_cell
+{
+    margin: 0 auto;
+}
+
+.link_image_dot_row
+{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.inscriptions_three_row
+{
+    margin: 120px auto 0;
+    max-width: 1200px;
+}
+
+.cell_align
+{
+    text-align: center;
+}
+
+.button_bottom
+{
+    margin: 20px auto 0;
+    padding-top: 18px;
+    width: 150px;
+    height: 50px;
+    background: rgb(0,188,156);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(255,255,255);
+}
+
+.grey_container
+{
+    max-width: 1920px;
+    background: rgb(47,64,82);
+    margin-top: 130px;
+    padding-bottom: 70px;
+}
+
+.grey_row
+{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.grey_cell
+{
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.grey_caption
+{
+    margin-top: 70px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(255,255,255);
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.grey_logotipe
+{
+    margin-top: 14px;
+    text-align: left;
+}
+
+.grey_text
+{
+    margin-top: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: rgb(163,177,191);
+    text-align: left;
+}
+
+.grey_link
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(163,177,191);
+    text-align: left;
+}
+
+.grey_link a
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    color: rgb(163,177,191);
+    text-align: left;
+}
+
+/*    форма    */
+.form_class
+{
+    text-align: right;
+}
+
+input[type="text"]
+{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    background: rgb(78,92,108);
+    border: 0px;
+    color: rgb(130,142,153);
+}
+
+input[type="submit"]
+{
+    position: relative;
+    float: right;
+    right: 6px;
+    top: -50px;
+    width: 88px;
+    padding-top: 7px;
+    height: 28px;
+    background: rgb(0,188,156);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: rgb(255,255,255);
+}
+
+.grey_image
+{
+    display: block;
+    margin-top: 25px;
+}
+
+.grey_small
+{
+    margin-right: 10px;
+}
+
+/*    футер    */
+.footer_container
+{
+    max-width: 1920px;
+    background: rgb(40,54,69);
+    text-align: center;
+    height: 85px;
+}
+
+.footer_row
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 85px;
+}
+
+.footer_left
+{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.footer_right
+{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.footer_text
+{
+    position: relative;
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: rgb(112,126,140);
+}
+
+.footer_link
+{
+    line-height: 85px;
+    margin-right: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(112,126,140);
+}
+
+.footer_mini_menu
+{
+    display: none;
+    float: right;
+    height: 50px;
+    width: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    line-height: 50px;
+    background: rgb(40,54,69);
+    transition: .3s;
+    margin-top: 18px;
+    color: rgb(112,126,140);
+}
+
+/*        МЕДИА ЗАПРОСЫ        */
+@media (max-width: 1240px)
+{
+    .top_menu_row
+    {
+        width: 100%;
+        padding: 0 30px 0 30px;
+    }
+    .menu_logotipe
+    {
+        margin-left: 30px;
+    }
+    .motel_cell
+    {
+        padding: 10px 20px;
+    }
+    .reklam_row
+    {
+        padding: 0 15px;
+    }
+    .reklam_cell
+    {
+        padding: 5px 5px;
+    }
+    input[type="submit"]
+    {
+        position: static;
+    }
+}
+
+@media (max-width: 1060px)
+{
+    .menu_main_row
+    {
+        width: 100%;
+    }
+    .menu_link
+    {
+        display: inline-block;
+        width: 100%;
+        height: 36px;
+        margin: 0;
+        line-height: 36px;
+        display: none;
+    }
+    .menu_lens
+    {
+        display: inline-block;
+        width: 100%;
+        height: 36px;
+        margin: 0;
+        line-height: 36px;
+        display: none;
+    }
+    .hamburger_button
+    {
+        display: block;
+    }
+    .footer_link
+    {
+        display: none;
+    }
+    .footer_mini_menu
+    {
+        display: block;
+        float: right;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .link_right
+    {
+        display: none;
+    }
+    .pictograph_image
+    {
+        display: inline-block;
+        position: relative;
+        float: none;
+    }
+    .pictograph_box
+    {
+        display: inline-block;
+        padding-left: 10px;
+    }
+}
