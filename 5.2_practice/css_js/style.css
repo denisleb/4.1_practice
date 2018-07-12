@@ -303,7 +303,7 @@ body
     color: rgb(85,85,85);
 }
 
-.myself_link_text
+.form_link
 {
     display: block;
     margin-top: 46px;
@@ -313,12 +313,12 @@ body
     text-decoration: none;
 }
 
-.myself_link_text:hover
+.form_link:hover
 {
     color: rgb(5,80,80);
 }
 
-.myself_link_underlined
+.form_link_underlined
 {
     text-decoration: underline;
 }
@@ -332,9 +332,14 @@ body
     bottom: 0;
     cursor: pointer;
     background: rgba(0,0,0,0.5);
+    //opacity: 0.2;
+    //-webkit-transition: opacity 300ms ease-in;
+    //-moz-transition: opacity 300ms ease-in;
+    //transition: opacity 300ms ease-in;
 }
 
-.form_container_
+/*
+.form_container
 {
     position: fixed;
     width: 660px;
@@ -344,69 +349,33 @@ body
     text-align: center;
     border-radius: 10px;
     background: rgb(255,255,255);
+}
+*/
 
+#form_container_id
+{
+    opacity: 0.2;
+    -webkit-transition: opacity 300ms ease-in;
+    -moz-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
 }
 
 .form_container
 {
     position: fixed;
     width: 660px;
-    height: 900px;
     top: 50%;
+    //top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     border-radius: 10px;
     background: rgb(255,255,255);
-}
-
-.form_container_
-{
-top: 0;
-right: 0;
-left: 50%;
-font-size: 14px;
-font-family: 'Tahoma', Arial, sans-serif;
-z-index: 10000;
-margin: 0 auto;
-width: 100%;
-min-width: 320px;
-max-width: 820px;
-/* фиксированное позиционирование, окно стабильно при прокрутке */
-position: fixed;
-padding: 15px;
-border: 1px solid #383838;
-/* скругление углов */
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
--ms-border-radius: 4px;
-border-radius: 4px;
-background-color: #FFFFFF;
-/* внешняя тень */
--webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
--moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
--ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
--o-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
-/* трансформация */
--webkit-transform: translate(-50%, -150%);
--ms-transform: translate(-50%, -150%);
--o-transform: translate(-50%, -150%);
-transform: translate(-50%, -150%);
-/* анимируем трансформацию */
--webkit-transition: transform 0.6s ease-out;
--moz-transition: transform 0.6s ease-out;
--ms-transition: transform 0.6s ease-out;
--o-transition: transform 0.6s ease-out;
-transition: transform 0.6s ease-out;
-
-/* активируем мод. окно */
-.overlay:target+.popup 
-top: 50%;
--webkit-transform: translate(-50%,-50%);
--ms-transform: translate(-50%, -50%);
--o-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%); 
+    padding-bottom: 50px;
+/**/    opacity: 0.2;
+    -webkit-transition: opacity 300ms ease-in;
+    -moz-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
 }
 
 .button_cross
@@ -426,8 +395,7 @@ transform: translate(-50%, -50%);
     margin: 0 auto;
     width: 82%;
     text-align: left;
-    background: rgb(230,230,230);
-    height: 900px;
+    background: rgb(255,255,255);
 }
 
 .form_caption
@@ -440,7 +408,7 @@ transform: translate(-50%, -50%);
     line-height: 36px;
     color: rgb(51,51,51);
     text-align: center;
-    background: rgb(150,150,150);
+    background: rgb(255,255,255);
 }
 
 .form_label_name
@@ -449,7 +417,7 @@ transform: translate(-50%, -50%);
     text-align: left;
     margin-top: 37px;
     width: 100%;
-    background: rgb(150,150,0);
+    background: rgb(255,255,255);
 }
 
 .form_label_email
@@ -458,7 +426,7 @@ transform: translate(-50%, -50%);
     text-align: left;
     margin-top: 27px;
     width: 100%;
-    background: rgb(150,150,0);
+    background: rgb(255,255,255);
 }
 
 .form_label_country
@@ -467,7 +435,7 @@ transform: translate(-50%, -50%);
     text-align: left;
     margin-top: 25px;
     width: 100%;
-    background: rgb(150,150,0);
+    background: rgb(255,255,255);
 }
 
 
@@ -488,7 +456,7 @@ transform: translate(-50%, -50%);
     color: rgb(51,51,51);
     text-align: left;
     margin-top: 45px;
-    background: rgb(50,150,50);
+    background: rgb(255,255,255);
 }
 
 .form_label_gender
@@ -519,7 +487,7 @@ input[type="radio"]
 {
     display: block;
     margin: 22px auto 0;
-    background: rgb(150,150,0);
+    background: rgb(255,255,255);
 }
 
 .form_star
@@ -649,7 +617,12 @@ input[type="submit"]:hover
     width: 80%
 }
 
-.film_container
+.invisible
+{
+    display: none;
+}
+
+.film_container_one
 {
     width: 100%;
     margin: 60px auto 0px;
@@ -660,8 +633,28 @@ input[type="submit"]:hover
     vertical-align: top;
     padding-top: 32px;
     padding-bottom: 50px;
-    transition: opacity .3s ease;
-    //animation: fade .6s;
+}
+
+.film_container_two
+{
+    width: 100%;
+    margin: 10px auto 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: rgb(249,249,249);
+    text-align: center;
+    vertical-align: top;
+    padding-top: 32px;
+    padding-bottom: 50px;
+    opacity: 0;
+    -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in;
+}
+
+.visible
+{
+    opacity: 1;
 }
 
 .film_title_box
@@ -748,14 +741,6 @@ input[type="submit"]:hover
     color: rgb(255,255,255);
     transition: .3s;
 }
-
-.invisible
-{
-    display: none;
-    opacity: 0;
-    //animation: fade .6s;
-}
-
 
 /************************** МЕНЮ-ЦЕНТРИРОВАНИЕ **************************/
 @media (max-width: 1050px)

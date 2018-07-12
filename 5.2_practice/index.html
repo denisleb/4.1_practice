@@ -18,7 +18,7 @@
     <div class="pattern_picture_two">
         <img src="images/profile_page_v4_popup.png" alt="Здесь должно быть изображение">
     </div>
-    -->
+-->
 
     <div class="menu_container">
         <a class="menu_button menu_button_one" target="blank" href="#">
@@ -36,11 +36,11 @@
         <a class="menu_right" target="blank" href="#">
             <span>≡</span>
         </a>
-
         <div class="float_clear"></div>
     </div>
 
     <div class="top_picture"></div> 
+
 
     <div class="myself_container">
         <div class="myself_box_left">
@@ -85,65 +85,66 @@
                 Горы - это более суровая стихия, опасная и холодная. Море - более теплая и солнечная.
                 Для путешествий по горам требуется больше снаряжения чем для моря.
             </p>
-            <a class="myself_link_text" href="#" onclick="formVisible()">
-                <span class="myself_link_underlined"  target="blank">Напиши мне</span> &rarr;
+            
+            <a id="form_link_id" class="form_link" href="#">
+                <span class="form_link_underlined"  target="blank">Напиши мне</span> &rarr;
             </a>
+            
         </div>
         <div class="float_clear"></div>
     </div>
 
-<!--  --> 
-<div id="form_overlay_id" class="form_overlay invisible" onclick="formInVisible()"> </div>
-<div id="form_container_id" class="form_container invisible">
-    <p class="button_cross" onclick="formInVisible()"></p>
-    <div class="form_box">
-        <h3 class="form_caption">Напиши мне</h3>
-        <form method="POST" id="form_tag" name="form_myself" accept-charset="UTF-8" action="form.php" onsubmit="return checkForm();">
-            <label class="form_label_name" for="your_name">
-               <span class="form_label_caption">Ваше имя</span> <span class="form_star">*</span>
-               <input class="form_inpit" id="your_name" name="your_name" type="text" tabindex="1"> 
-            </label>
-            <label class="form_label_email" for="your_email">
-                <span class="form_label_caption">Ваш email</span><span class="form_star">*</span>
-                <input type="text" id="your_email" name="your_email" tabindex="2">
-            </label>
-            <label class="form_label_country" for="your_country">
-                <span class="form_label_caption">Откуда вы?</span>
-                <select id="your_country" name="your_country" tabindex="3">
-                    <option selected value="Россия">Россия</option>
-                    <option value="Гренландия">Гренландия</option>
-                    <option value="Исландия">Исландия</option>
-                    <option value="Ирландия">Ирландия</option>
-                </select>
-            </label>
-            <p class="form_label_caption_gender">Ваш пол</p>
-            <label class="form_label_gender" for="your_gender_man">
-                <input type="radio" id="your_gender_man" name="your_gender" tabindex="4" value="Мужской" checked>
-                <span class="form_gender_text">Мужской</span>
-            </label>
-            <label class="form_label_gender" for="your_gender_women">
-                <input type="radio" id="your_gender_women" name="your_gender" tabindex="5" value="Женский">
-                <span class="form_gender_text">Женский</span>
-            </label>
 
-            <label class="form_label_textarea" for="your_textarea">
-                <span class="form_label_caption">Ваше сообщение</span><span class="form_star">*</span>
-                <textarea name="your_textarea" id="your_textarea" tabindex="6"></textarea>
-            </label>
-            <label class="form_label" for="form_submit"></label>
-            <input type="submit" name="form_submit" id="form_submit" tabindex="7" value="Отправить">
-        </form>
+    <!--  --> 
+    <div id="form_overlay_id" class="form_overlay invisible" onclick="formInVisible()"> </div>
+    <div id="form_container_id" class="form_container invisible">
+        <p class="button_cross" onclick="formInVisible()"></p>
+        <div class="form_box">
+            <h3 class="form_caption">Напиши мне</h3>
+            <form method="POST" id="form_tag" name="form_myself" accept-charset="UTF-8" action="form.php" onSubmit="return checkForm();">
+                <label class="form_label_name" for="your_name">
+                   <span class="form_label_caption">Ваше имя</span> <span class="form_star">*</span>
+                   <input class="form_inpit" id="your_name" name="your_name" type="text" tabindex="1"> 
+                </label>
+                <label class="form_label_email" for="your_email">
+                    <span class="form_label_caption">Ваш email</span><span class="form_star">*</span>
+                    <input type="text" id="your_email" name="your_email" tabindex="2">
+                </label>
+                <label class="form_label_country" for="your_country">
+                    <span class="form_label_caption">Откуда вы?</span>
+                    <select id="your_country" name="your_country" tabindex="3">
+                        <option selected value="Россия">Россия</option>
+                        <option value="Гренландия">Гренландия</option>
+                        <option value="Исландия">Исландия</option>
+                        <option value="Ирландия">Ирландия</option>
+                    </select>
+                </label>
+                <p class="form_label_caption_gender">Ваш пол</p>
+                <label class="form_label_gender" for="your_gender_man">
+                    <input type="radio" id="your_gender_man" name="your_gender" tabindex="4" value="Мужской" checked>
+                    <span class="form_gender_text">Мужской</span>
+                </label>
+                <label class="form_label_gender" for="your_gender_women">
+                    <input type="radio" id="your_gender_women" name="your_gender" tabindex="5" value="Женский">
+                    <span class="form_gender_text">Женский</span>
+                </label>
+                <label class="form_label_textarea" for="your_textarea">
+                    <span class="form_label_caption">Ваше сообщение</span><span class="form_star">*</span>
+                    <textarea name="your_textarea" id="your_textarea" tabindex="6"></textarea>
+                </label>
+                <label class="form_label" for="form_submit"></label>
+                <input type="submit" name="form_submit" id="form_submit" tabindex="7" value="Отправить">
+            </form>
+        </div>
     </div>
-</div>
 
 
-   
-    <div class="film_container">
+    <div class="film_container_one">
         <div class="film_title_box">
             <h2 class="film_title_main">Любимые фильмы</h2>
         </div>
         <div class="film_box">
-                        <img class="film_images" src="images/brave_heart.jpg" alt="Здесь должно быть изображение">
+            <img class="film_images" src="images/brave_heart.jpg" alt="Здесь должно быть изображение">
             <p class="film_title_definition">Отважное сердце</p>
             <p class="film_text">
                 Действие этого широкомасштабного фильма начинается в 1280 году. Это история легендарного национального шотландского героя Уильяма Уоллеса, посвятившего себя борьбе с англичанами при короле Эдуарде Длинноногом. Он рано лишился отца, который погиб от рук англичан, но его дядя сумел дать мальчику хорошее воспитание в Европе.
@@ -175,11 +176,11 @@
 
 
     <div id="film_button_container_id" class="film_button_container">
-        <a class="film_button" target="blank" onclick="button_class_list()">Все фильмы</a>
+        <a class="film_button" id="film_button_id" target="blank">Все фильмы</a>
     </div>
 
-   
-    <div id="film_container_id" class="film_container invisible">
+
+    <div id="film_container_two_id" class="film_container_two invisible">
         <div class="film_box">
             <img class="film_images" src="images/prometheus.jpg" alt="Здесь должно быть изображение">
             <p class="film_title_definition">Прометей</p>
